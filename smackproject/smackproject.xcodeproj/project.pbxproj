@@ -17,8 +17,9 @@
 		D764FF6325F7799A00F19655 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D764FF6225F7799A00F19655 /* ChannelVC.swift */; };
 		D764FF6525F77AF200F19655 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D764FF6425F77AF200F19655 /* GradientView.swift */; };
 		D786243825F5EFF900E15B0E /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D786243725F5EFF900E15B0E /* SWRevealViewController.m */; };
-		D78A629025F7903A00A71BAD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78A628F25F7903A00A71BAD /* Constants.swift */; };
+		D78A629025F7903A00A71BAD /* "Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78A628F25F7903A00A71BAD /* "Constants.swift */; };
 		D78A629225F7971D00A71BAD /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78A629125F7971D00A71BAD /* LoginVC.swift */; };
+		D78A629425F79CAF00A71BAD /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78A629325F79CAF00A71BAD /* CreateAccountVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,8 +38,9 @@
 		D786243525F5EFF800E15B0E /* smackproject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "smackproject-Bridging-Header.h"; sourceTree = "<group>"; };
 		D786243625F5EFF900E15B0E /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		D786243725F5EFF900E15B0E /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
-		D78A628F25F7903A00A71BAD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D78A628F25F7903A00A71BAD /* "Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "\"Constants.swift"; sourceTree = "<group>"; };
 		D78A629125F7971D00A71BAD /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		D78A629325F79CAF00A71BAD /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		F4E13B9CE5059933958DF2CC /* Pods-smackproject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smackproject.release.xcconfig"; path = "Pods/Target Support Files/Pods-smackproject/Pods-smackproject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -128,6 +130,7 @@
 				D764FF6025F7797900F19655 /* ChatVC.swift */,
 				D764FF6225F7799A00F19655 /* ChannelVC.swift */,
 				D78A629125F7971D00A71BAD /* LoginVC.swift */,
+				D78A629325F79CAF00A71BAD /* CreateAccountVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -145,7 +148,7 @@
 		D78A628E25F7902000A71BAD /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				D78A628F25F7903A00A71BAD /* Constants.swift */,
+				D78A628F25F7903A00A71BAD /* "Constants.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -274,7 +277,8 @@
 				D78A629225F7971D00A71BAD /* LoginVC.swift in Sources */,
 				D764FF6525F77AF200F19655 /* GradientView.swift in Sources */,
 				D786243825F5EFF900E15B0E /* SWRevealViewController.m in Sources */,
-				D78A629025F7903A00A71BAD /* Constants.swift in Sources */,
+				D78A629025F7903A00A71BAD /* "Constants.swift in Sources */,
+				D78A629425F79CAF00A71BAD /* CreateAccountVC.swift in Sources */,
 				D764FF6125F7797900F19655 /* ChatVC.swift in Sources */,
 				D764FF6325F7799A00F19655 /* ChannelVC.swift in Sources */,
 			);

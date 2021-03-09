@@ -10,11 +10,15 @@ import UIKit
 
 class ChannelVC: UIViewController {
 
+    @IBOutlet weak var loginBtn: UIButton!
+    @IBAction func prepareForUnwind(segue: UIStoryboardSegue) {}
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.revealViewController()?.rearViewRevealWidth = self.view.frame.width - self.view.frame.width / 5
 
     }
+    
     
 
     @IBAction func loginBrnPressed(_ sender: Any) {
