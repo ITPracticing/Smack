@@ -30,21 +30,74 @@
         <scene sceneID="Xny-Ay-a67">
             <objects>
                 <viewController id="TC8-v2-gEC" customClass="ChannelVC" customModule="smackproject" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="38G-L9-kat">
+                    <view key="view" contentMode="scaleToFill" id="38G-L9-kat" customClass="GradientView" customModule="smackproject" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Smack" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kwA-tm-n1I">
+                                <rect key="frame" x="20" y="64" width="96" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Channel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FWW-nb-LPL">
+                                <rect key="frame" x="20" y="120" width="87" height="27"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="t3s-TL-ftE">
+                                <rect key="frame" x="20" y="712" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="m7w-Ha-MZ5"/>
+                                    <constraint firstAttribute="width" constant="120" id="mhw-KN-IGk"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PLe-pv-Fq7">
+                                <rect key="frame" x="165" y="754" width="55" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hLJ-z4-913">
+                                <rect key="frame" x="0.0" y="177" width="414" height="505"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b8d-Tk-qKM">
+                                <rect key="frame" x="292" y="107" width="40" height="40"/>
+                                <state key="normal" image="addChannelButton"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="t3s-TL-ftE" firstAttribute="top" secondItem="hLJ-z4-913" secondAttribute="bottom" constant="30" id="4SY-sj-bbW"/>
+                            <constraint firstItem="FWW-nb-LPL" firstAttribute="top" secondItem="kwA-tm-n1I" secondAttribute="bottom" constant="20" id="7Ie-Zn-hxl"/>
+                            <constraint firstItem="uvh-I4-EE5" firstAttribute="bottom" secondItem="t3s-TL-ftE" secondAttribute="bottom" constant="30" id="HUT-N0-dXE"/>
+                            <constraint firstItem="uvh-I4-EE5" firstAttribute="trailing" secondItem="b8d-Tk-qKM" secondAttribute="trailing" constant="82" id="JCZ-9o-XqD"/>
+                            <constraint firstItem="hLJ-z4-913" firstAttribute="top" secondItem="FWW-nb-LPL" secondAttribute="bottom" constant="30" id="MWM-qi-39h"/>
+                            <constraint firstItem="t3s-TL-ftE" firstAttribute="leading" secondItem="uvh-I4-EE5" secondAttribute="leading" constant="20" id="Tnt-hs-8N6"/>
+                            <constraint firstItem="kwA-tm-n1I" firstAttribute="top" secondItem="uvh-I4-EE5" secondAttribute="top" constant="20" id="VgJ-Zj-2g9"/>
+                            <constraint firstItem="hLJ-z4-913" firstAttribute="leading" secondItem="uvh-I4-EE5" secondAttribute="leading" id="ZJC-CV-IPT"/>
+                            <constraint firstItem="hLJ-z4-913" firstAttribute="trailing" secondItem="uvh-I4-EE5" secondAttribute="trailing" id="ZLm-6a-Ufj"/>
+                            <constraint firstItem="FWW-nb-LPL" firstAttribute="leading" secondItem="uvh-I4-EE5" secondAttribute="leading" constant="20" id="ngk-Q6-pnG"/>
+                            <constraint firstItem="b8d-Tk-qKM" firstAttribute="centerY" secondItem="FWW-nb-LPL" secondAttribute="centerY" constant="-6.5" id="oGr-yZ-Msh"/>
+                            <constraint firstItem="kwA-tm-n1I" firstAttribute="leading" secondItem="uvh-I4-EE5" secondAttribute="leading" constant="20" id="sDT-Pt-MD6"/>
+                            <constraint firstItem="PLe-pv-Fq7" firstAttribute="centerY" secondItem="t3s-TL-ftE" secondAttribute="centerY" id="sNG-5e-4kK"/>
+                            <constraint firstItem="PLe-pv-Fq7" firstAttribute="leading" secondItem="t3s-TL-ftE" secondAttribute="trailing" constant="25" id="yTi-vi-EhT"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="uvh-I4-EE5"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jQY-aT-r6f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="180" y="-587"/>
+            <point key="canvasLocation" x="179.71014492753625" y="-587.27678571428567"/>
         </scene>
-        <!--View Controller-->
+        <!--ChatVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ChatVC" customModule="smackproject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -85,6 +138,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="menuBtn" destination="GrN-bs-1gm" id="Hfx-dF-m53"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -92,6 +148,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="addChannelButton" width="22" height="22"/>
+        <image name="profileDefault" width="192" height="192"/>
         <image name="smackBurger" width="40" height="40"/>
     </resources>
 </document>
